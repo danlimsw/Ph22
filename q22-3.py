@@ -59,8 +59,8 @@ def runqn1(N,dt,interv,a):
     xdata = [data[i][0] for i in range(N)]
     ydata = [data[i][1] for i in range(N)]
     line, = ax.plot(xdata,ydata,'.')
-    ax.set_ylim(-1,1)
-    ax.set_xlim(-1,1)
+    ax.set_ylim(0,1)
+    ax.set_xlim(0,1)
     def datagen():
         data = datagen.data
         dt = datagen.dt
